@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medição De IMC</title>
+
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <main>
+        <h2>Calculo IMC</h2>
+
+        <section>
+            <form id="formulario">
+                <div>
+                    <label>Nome</label>
+                </div>
+    
+                <div>
+                    <input type="text" class="inputNome">
+                </div>
+    
+                <div>
+                    <label>Altura</label>
+                </div>
+    
+                <div>
+                    <input type="text" class="inputAltura">
+                </div>
+                
+                <div>
+                    <label>Peso</label>
+                </div>
+                
+                <div>
+                    <input type="text" class="inputPeso">
+                </div>
+                
+                <div>
+                    <label>Sexo</label>
+                </div>
+    
+                <div class="divRadio">
+                    <input type="radio" name="sexo" value="Masculino">
+                    <label for="">Masculino</label>
+                    <input type="radio" name="sexo" value="Feminino">
+                    <label for="">Feminino</label> 
+                </div>
+    
+                <div>
+                    <button id="btnCalc">Calcular</button>
+                </div>
+                
+                <div>
+                    <button id="btnLimpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+        
+        <section class="sectionResultados invisivel">
+            <label for="" class="lblNomeResult"></label>
+            <label for="" class="lblAlturaResult"></label>
+            <label for="" class="lblPesoResult"></label>
+            <label for="" class="lblSexoResult"></label>
+
+            <label for="" class="lblIMCResult"></label>
+            <label for="" class="lblCondiçãoResult"></label>
+            <Label class="lblAviso"></Label>
+        </section>
+    </main>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
